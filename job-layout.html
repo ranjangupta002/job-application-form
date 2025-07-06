@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+    <style>
+        header {
+            display: flex;
+            justify-content: center;
+        }
+
+        .application-container {
+            display: flex;
+        }
+
+        .left {
+            width: 60vw;
+        }
+
+        .right {
+            width: 40vw;
+        }
+        form div{
+               margin: 20px;
+            }
+        .submit-button input{
+            padding:5px 22px;
+        }
+        footer{
+            display: flex;
+            justify-content: center;
+        }
+        @media screen and (max-width:600px) {
+            .application-container {
+                flex-direction: column;
+            }
+            .element{
+                display: flex;
+                font-weight: bold;
+                gap:5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Ranjan Co. PVT. LTD</h1>
+    </header>
+    <main>
+        <div class="application-container">
+            <div class="left">
+                <h2 class="job-description">Job Description</h2>
+                <p><strong>Post</strong>:Data Scientist</p>
+                <p><strong>Role</strong>:
+                    A Data Scientist is responsible for collecting, analyzing, and interpreting large amounts of data to
+                    help businesses make informed decisions. They use statistical techniques, machine learning, and data
+                    visualization tools to identify patterns, predict outcomes, and solve complex problems. The role
+                    involves working closely with business teams to translate data insights into actionable strategies.
+                </p>
+                <p>
+                    <strong>Skilled Required</strong>
+                </p>
+                <ol>
+                    <li>
+                        Programming Languages
+                        <ul>
+                            <li> Python (most preferred)
+
+                            </li>
+                            <li> R, SQL, Java, or Scala (optional)</li>
+                        </ul>
+
+                    </li>
+                    <li>
+                        Mathematics & Statistics
+                        <ul>
+                            <li>
+                                Probability, Linear Algebra, Calculus
+
+                            </li>
+                            <li>
+                                Hypothesis testing, regression, distributions
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Data Manipulation & Analysis
+                        <ul>
+                            <li>Libraries like Pandas, NumPy
+
+                            </li>
+                            <li>
+                                Data cleaning, transformation, and exploration
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        Machine Learning
+                        <ul>
+                            <li> Supervised and unsupervised learning
+
+                            </li>
+                            <li>
+                                Tools: Scikit-learn, TensorFlow, Keras
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+
+                <p>
+                    <strong>Experience</strong>- Two year of working Experience in certified company.
+                </p>
+
+                <p>
+                    <strong>Location</strong>: Ranjan Co. PVT. LTD. Jagdeo Path, Patna, Bihar - 800014.
+                </p>
+
+                <p>
+                    <strong>Salary</strong>: 450000/-
+                </p>
+
+            </div>
+
+            <div class="right">
+                <h2>Application Form</h2>
+                <form class="form-tb" method="get">
+                    <div class="name element">
+                        <label for="name">Name </label>
+                        <input type="text" name="name" id="name" placeholder="Enter your name"><br>
+                    </div>
+                    <div class="email element">
+                        <label for="email">Email </label>
+                        <input type="email" name="email" id="email" placeholder="Email"><br>
+                    </div>
+
+                    <div class="password element">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password"><br>
+                    </div>
+
+                    <div class="gender element">
+                        <label for="gender">Gender:</label>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label><br>
+                    </div>
+                    <div class="skills">
+
+                        <h3>Skills:</h3>
+                        <label for="html">HTML</label>
+                        <input type="checkbox" name="skills" id="html">
+
+                        <label for="css">CSS</label>
+                        <input type="checkbox" name="skills" id="css">
+
+                        <label for="js">JAVA SCRIPT</label>
+                        <input type="checkbox" name="skills" id="js">
+
+                        <label for="react">REACT</label>
+                        <input type="checkbox" name="skills" id="react">
+                        <br>
+                    </div>
+                    <div class="resume element">
+                        <label for="resume">Resume:</label>
+                        <input type="file" name="file" id="resume"><br>
+                    </div>
+                    <div class="biodata element">
+
+                        <label for="biodata">Biodata:</label>
+                        <textarea name="biodata" id="biodata" placeholder="write your biodata here"></textarea>
+                        <br>
+                    </div>
+
+                    <div class="location element">
+                        <label for="location">Location</label>
+                        <select name="location" id="location">
+                            <option value="Patna">Patna</option>
+                            <option value="Ranchi">Ranchi</option>
+                            <option value="Banaras">Banaras</option>
+                        </select><br>
+                    </div>
+                    <div class="submit-button">
+                        <input type="submit" name="submit" id="submit" required>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>"Thank you for showing interest. Our team will contact you soon."</p>
+    </footer>
+</body>
+
+</html>
